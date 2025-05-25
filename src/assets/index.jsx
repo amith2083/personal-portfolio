@@ -19,29 +19,29 @@ export const heroIcons = [
 
 import Projector2LineIcon from 'remixicon-react/Projector2LineIcon'
 import GroupLineIcon from 'remixicon-react/GroupLineIcon'
-import AwardFillIcon from 'remixicon-react/AwardFillIcon'
+// import AwardFillIcon from 'remixicon-react/AwardFillIcon'
 
 export const aboutData = [
   {
     title: 'Github Repos',
-    amount: 348,
+    amount: 15,
     icon: <GithubFillIcon />,
   },
   {
     title: 'Successful Projects',
-    amount: 227,
+    amount: 10,
     icon: <Projector2LineIcon />,
   },
-  {
-    title: 'Satisfied clients',
-    amount: 176,
-    icon: <GroupLineIcon />,
-  },
-  {
-    title: 'Awards and Recognition',
-    amount: 107,
-    icon: <AwardFillIcon />,
-  },
+  // {
+  //   title: 'Satisfied clients',
+  //   amount: 176,
+  //   icon: <GroupLineIcon />,
+  // },
+  // {
+  //   title: 'Awards and Recognition',
+  //   amount: 107,
+  //   icon: <AwardFillIcon />,
+  // },
 ]
 
 import DownloadLineIcon from 'remixicon-react/DownloadLineIcon'
@@ -51,7 +51,7 @@ export const downloadIcon = <DownloadLineIcon />
 export const arrowLeftIcon = <ArrowLeftSFillIcon />
 
 export const aboutText =
-  " Hi, I'm Nick, a web developer & designer. I blend the technical  skills of web development with the creative aspects of web design. I code in HTML, CSS, JavaScript, React, NextJS... to build functional and responsive websites, while also using design tools like Photoshop and Figma to create visually appealing and user-friendly  interfaces. My role allows me to ensure that websites not only work well but also look great and provide an excellent user experience."
+  " Hi, I'm Amith, a web developer who loves turning ideas into awesome, fast websites. I use HTML, CSS, and JavaScript to build slick, responsive front-ends with React and Next.js, strengthened by TypeScript for reliable code. On the back-end, I work with Node.js, Express.js, and MongoDB to create quick, secure APIs for smooth performance. I focus on building user-friendly, innovative solutions that work perfectly. Ready to kickstart your project? Let’s do it"
 // End of About Me
 
 // Experience
@@ -112,18 +112,7 @@ export const skillsData = [
     name: 'Figma',
     icon: '/skills/figma.png',
   },
-  {
-    name: 'Photoshop',
-    icon: '/skills/photoshop.png',
-  },
-  {
-    name: 'Blender',
-    icon: '/skills/blender.png',
-  },
-  {
-    name: 'VS Code',
-    icon: '/skills/vscode.png',
-  },
+  
   {
     name: 'HTML',
     icon: '/skills/html.png',
@@ -140,10 +129,7 @@ export const skillsData = [
     name: 'TailwindCSS',
     icon: '/skills/tailwind.png',
   },
-  {
-    name: 'Vite',
-    icon: '/skills/vite.png',
-  },
+
   {
     name: 'ReactJS',
     icon: '/skills/react.png',
@@ -152,18 +138,12 @@ export const skillsData = [
     name: 'TypeScript',
     icon: '/skills/ts.png',
   },
-  {
-    name: 'AI',
-    icon: '/skills/ai.png',
-  },
+ 
   {
     name: 'Framer Motion',
     icon: '/skills/framer.png',
   },
-  {
-    name: 'ThreeJS',
-    icon: '/skills/threejs.png',
-  },
+ 
   {
     name: 'NextJS',
     icon: '/skills/nextjs.png',
@@ -296,16 +276,16 @@ export const projectsData = [
 
 export const projectsButton = [
   'All',
-  'Figma',
-  'Photoshop',
-  'HTML',
-  'CSS',
   'JavaScript',
+  'NodeJs',
+  'ExpressJs',
+  'MongoDB',
   'ReactJS',
+  'Redux',
   'TailwindCSS',
   'NextJS',
   'FramerMotion',
-  'ThreeJS',
+  
 ]
 
 // Pricing Plans

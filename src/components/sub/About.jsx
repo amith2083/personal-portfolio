@@ -7,7 +7,7 @@ import { aboutData,aboutText,downloadIcon,arrowLeftIcon } from '@/assets'
 
 const About = () => {
   return (
-    <div className=' min-h-screen flex flex-col justify-center items-center px-96'>
+    <div id='about' className=' min-h-screen flex flex-col justify-center items-center px-96'>
       <Heading text={'About Me'}/>
       <div className='w-full flex items-center justify-between md:justify-center'>
         <Image src={'/about-me.png'} alt='About Image'width={400} height={400} className='w-[300px] lg:w-[200] md:hidden'/>

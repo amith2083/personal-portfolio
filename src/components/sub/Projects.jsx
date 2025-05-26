@@ -22,7 +22,7 @@ const Projects = () => {
         prevIndex.current= index
     },[index])
   return (
-    <div className="min-h-screen py-20 px-80">
+    <div id='projects' className="min-h-screen py-20 px-80">
       <Heading text="Projects" />
       <div className="flex flex-wrap items-center justify-between gap-y-10">
         {projectsButton.map((text, i) => (

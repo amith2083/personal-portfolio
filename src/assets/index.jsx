@@ -172,57 +172,57 @@ import ArrowRightSLineIcon from 'remixicon-react/ArrowRightSLineIcon'
 export const starIcons = [<StarFillIcon />, <StarHalfLineIcon />]
 export const arrowIcons = [<ArrowLeftSLineIcon />, <ArrowRightSLineIcon />]
 
-export const reviewsData = [
-  {
-    image: '/reviews/client-4.png',
-    name: 'Mark T., Freelance Graphic Designer',
-    comment:
-      "Your work on our website has been phenomenal. The design is visually stunning and incredibly user-friendly. We've received countless compliments from our customers, and our sales have noticeably increased. Thank you for capturing our brand's essence so perfectly!",
-    stars: [1, 1, 1, 1, 0.5],
-  },
-  {
-    image: '/reviews/client-2.png',
-    name: 'Sarah B., E-commerce Store Owner',
-    comment:
-      "Working with you, has been an absolute pleasure. The portfolio website you created for me is sleek, modern, and beautifully showcases my work. Your attention to detail and creative flair are truly impressive. I couldn't be happier with the final result!",
-    stars: [1, 1, 1, 1, 1],
-  },
-  {
-    image: '/reviews/client-3.png',
-    name: 'Emily R., CEO of Tech Startup',
-    comment:
-      "The redesign of our corporate website exceeded all expectations. Your innovative ideas and professional execution have given us a site that is not only visually appealing but also highly functional. We've seen a significant improvement in user engagement thanks to your expertise.",
-    stars: [1, 1, 1, 1, 1],
-  },
-  {
-    image: '/reviews/client-1.png',
-    name: 'Bob W., Lifestyle Blogger',
-    comment:
-      "I absolutely love the blog design you created for me, [Web Designer's Name]. It's exactly what I envisioned—stylish, unique, and easy to navigate. Your responsiveness and creative input were invaluable. My readers are raving about the new look, and I couldn't be more thrilled!",
-    stars: [1, 1, 1, 1, 0.5],
-  },
-  {
-    image: '/reviews/client-5.png',
-    name: 'David H., Director of Non-Profit Organization',
-    comment:
-      "your work on our non-profit’s website has been transformative. The design is clean, engaging, and effectively conveys our mission. We've seen an increase in online donations and volunteer sign-ups, all thanks to your fantastic design. Your dedication and talent are greatly appreciated!",
-    stars: [1, 1, 1, 1, 1],
-  },
-]
+// export const reviewsData = [
+//   {
+//     image: '/reviews/client-4.png',
+//     name: 'Mark T., Freelance Graphic Designer',
+//     comment:
+//       "Your work on our website has been phenomenal. The design is visually stunning and incredibly user-friendly. We've received countless compliments from our customers, and our sales have noticeably increased. Thank you for capturing our brand's essence so perfectly!",
+//     stars: [1, 1, 1, 1, 0.5],
+//   },
+//   {
+//     image: '/reviews/client-2.png',
+//     name: 'Sarah B., E-commerce Store Owner',
+//     comment:
+//       "Working with you, has been an absolute pleasure. The portfolio website you created for me is sleek, modern, and beautifully showcases my work. Your attention to detail and creative flair are truly impressive. I couldn't be happier with the final result!",
+//     stars: [1, 1, 1, 1, 1],
+//   },
+//   {
+//     image: '/reviews/client-3.png',
+//     name: 'Emily R., CEO of Tech Startup',
+//     comment:
+//       "The redesign of our corporate website exceeded all expectations. Your innovative ideas and professional execution have given us a site that is not only visually appealing but also highly functional. We've seen a significant improvement in user engagement thanks to your expertise.",
+//     stars: [1, 1, 1, 1, 1],
+//   },
+//   {
+//     image: '/reviews/client-1.png',
+//     name: 'Bob W., Lifestyle Blogger',
+//     comment:
+//       "I absolutely love the blog design you created for me, [Web Designer's Name]. It's exactly what I envisioned—stylish, unique, and easy to navigate. Your responsiveness and creative input were invaluable. My readers are raving about the new look, and I couldn't be more thrilled!",
+//     stars: [1, 1, 1, 1, 0.5],
+//   },
+//   {
+//     image: '/reviews/client-5.png',
+//     name: 'David H., Director of Non-Profit Organization',
+//     comment:
+//       "your work on our non-profit’s website has been transformative. The design is clean, engaging, and effectively conveys our mission. We've seen an increase in online donations and volunteer sign-ups, all thanks to your fantastic design. Your dedication and talent are greatly appreciated!",
+//     stars: [1, 1, 1, 1, 1],
+//   },
+// ]
 
 // Projects
 export const projectsData = [
   {
-    name: 'SparkleGrove.com',
+    name: '',
     desc: 'A lifestyle blog featuring DIY crafts, home decor ideas, and inspiration for creating a cozy and stylish living space.',
-    url: '/projects/image-1.jpg',
-    tech: ['Figma', 'Photoshop', 'HTML'],
+    url: '/projects/ecommerce.png',
+    tech: ['HTML','TailwindCSS','JavaScript','NodeJs','ExpressJs','MongoDB','ReactJs','Redux']
   },
   {
     name: 'TechTrekker.net',
     desc: 'A technology news and review site covering the latest gadgets, software updates, and trends in the tech industry.',
-    url: '/projects/image-2.jpg',
-    tech: ['Figma', 'Photoshop'],
+    url: '/projects/chat.png',
+    tech: ['HTML', 'TailwindCSS','ReactJs','JavaScript','Firebase'],
   },
   {
     name: 'CozyNestHomes.org',

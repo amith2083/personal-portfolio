@@ -5,14 +5,14 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <div className="w-[70px] h-full fixed left-0 top-0 flex flex-col justify-between border-r border-gray-200 px-4 py-10">
-      <a href="#">
+    <div className="w-[70px]  h-full fixed left-0 top-0 flex flex-col justify-between border-r border-gray-200 px-4 py-10">
+      <a href="/#home">
         {/* <span className="text-3xl font-semibold text-red-400">K M</span> */}
         <img src='./software-developer.png' alt="Logo" className="w-10 h-10 object-contain" />
 {/* 
         <span className="block w-min rotate-90 origin-bottom text-[12px] font-semibold text-red-400">Amith</span> */}
       </a>
-      <div className="flex flex-col gap-y-3 sm:gap-y-2">
+      <div className="flex flex-col gap-y-3 sm:gap-y-2"> 
         {navbarData.map((item,i)=>
         <a href={`/#${item.id}`} key={i} className="group flex-col items-center gap-y-2">
           <span className="text-2xl text-yellow-600 group-hover:scale-125 transition-all">

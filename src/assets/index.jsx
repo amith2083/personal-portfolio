@@ -1,35 +1,45 @@
 // Hero
-import InstagramFillIcon from 'remixicon-react/InstagramFillIcon'
+// import InstagramFillIcon from 'remixicon-react/InstagramFillIcon'
 
-import YoutubeFillIcon from 'remixicon-react/YoutubeFillIcon'
-import GithubFillIcon from 'remixicon-react/GithubFillIcon'
-import LinkedinBoxFillIcon from 'remixicon-react/LinkedinBoxFillIcon'
-
-
+// import YoutubeFillIcon from 'remixicon-react/YoutubeFillIcon'
+import GithubFillIcon from "remixicon-react/GithubFillIcon";
+import LinkedinBoxFillIcon from "remixicon-react/LinkedinBoxFillIcon";
 
 /* eslint-disable react/jsx-key */
+// export const heroIcons = [
+//   <LinkedinBoxFillIcon/>,
+//   <GithubFillIcon />,
+// ]
 export const heroIcons = [
-  <InstagramFillIcon />,
-  <LinkedinBoxFillIcon/>,
-  <YoutubeFillIcon />,
-  <GithubFillIcon />,
-]
+  {
+    href: "https://github.com/amith2083",
+    icon: (
+      <GithubFillIcon className="text-black hover:scale-110 transition-transform" />
+    ),
+  },
+  {
+    href: "https://www.linkedin.com/in/amith-k-m/",
+    icon: (
+      <LinkedinBoxFillIcon className="text-blue-600 hover:scale-110 transition-transform" />
+    ),
+  },
+];
 
 // About Me
 
-import Projector2LineIcon from 'remixicon-react/Projector2LineIcon'
-import GroupLineIcon from 'remixicon-react/GroupLineIcon'
+import Projector2LineIcon from "remixicon-react/Projector2LineIcon";
+import GroupLineIcon from "remixicon-react/GroupLineIcon";
 // import AwardFillIcon from 'remixicon-react/AwardFillIcon'
 
 export const aboutData = [
   {
-    title: 'Github Repos',
-    amount: 15,
+    title: "Github Repos",
+    amount: 18,
     icon: <GithubFillIcon />,
   },
   {
-    title: 'Successful Projects',
-    amount: 10,
+    title: "Projects",
+    amount: 6,
     icon: <Projector2LineIcon />,
   },
   // {
@@ -42,135 +52,148 @@ export const aboutData = [
   //   amount: 107,
   //   icon: <AwardFillIcon />,
   // },
-]
+];
 
-import DownloadLineIcon from 'remixicon-react/DownloadLineIcon'
-import ArrowLeftSFillIcon from 'remixicon-react/ArrowLeftSFillIcon'
+import DownloadLineIcon from "remixicon-react/DownloadLineIcon";
+import ArrowLeftSFillIcon from "remixicon-react/ArrowLeftSFillIcon";
 
-export const downloadIcon = <DownloadLineIcon />
-export const arrowLeftIcon = <ArrowLeftSFillIcon />
+export const downloadIcon = <DownloadLineIcon />;
+export const arrowLeftIcon = <ArrowLeftSFillIcon />;
 
 export const aboutText =
-  " Hi, I'm Amith, a web developer who loves turning ideas into awesome, fast websites. I use HTML, CSS, and JavaScript to build slick, responsive front-ends with React and Next.js, strengthened by TypeScript for reliable code. On the back-end, I work with Node.js, Express.js, and MongoDB to create quick, secure APIs for smooth performance. I focus on building user-friendly, innovative solutions that work perfectly. Ready to kickstart your project? Let’s do it"
+  " Hi, I'm Amith, a web developer who loves turning ideas into awesome, fast websites. I use HTML, CSS, and JavaScript to build slick, responsive front-ends with React and Next.js, strengthened by TypeScript for reliable code. On the back-end, I work with Node.js, Express.js, and MongoDB to create quick, secure APIs for smooth performance. I focus on building user-friendly, innovative solutions that work perfectly. Ready to kickstart your project? Let’s do it";
 // End of About Me
 
 // Experience
-export const experienceData = [
-  {
-    year: 1,
-    title: 'Foundation and Basics',
-    education:
-      'High School Diploma: Focus on computer science, mathematics, and art/design courses.',
-    experience: [
-      'Basic HTML/CSS: Learn through online tutorials and courses.',
-      'Personal Projects: Create simple personal websites or blogs.',
-    ],
-  },
-  {
-    year: 2,
-    title: 'Advanced Learning and Early Experience',
-    education:
-      'Associate’s Degree in Web Development or Design: Enroll in a 2-year program covering web development and design principles.',
-    experience: [
-      'Freelance Work: Take on small freelance projects to build a portfolio.',
-      'Online Courses and Certifications: Learn JavaScript, responsive design, and UX/UI design.',
-    ],
-  },
-  {
-    year: 3,
-    title: 'Specialized Education and Real-World Application',
-    education:
-      'Online Courses and Bootcamps: Focus on specialized areas like front-end frameworks (React, Angular) and back-end technologies (Node.js).',
-    experience: [
-      'Internships: Secure internships with tech companies or design agencies.',
-      'Contribute to Open Source: Collaborate on open-source projects.',
-    ],
-  },
-  {
-    year: 4,
-    title: 'Building Expertise and Expanding Skills',
-    education: 'Certifications: Obtain certifications in advanced web technologies.',
-    experience: [
-      'Full-Time Position: Work as a junior web developer or designer.',
-      'Portfolio Development: Continuously update your portfolio with professional and personal projects.',
-    ],
-  },
-  {
-    year: 5,
-    title: 'Mastery and Leadership',
-    education: 'Workshops and Conferences: Attend industry events to stay updated.',
-    experience: [
-      'Senior Position: Aim for a senior web developer or lead designer role, mentoring junior colleagues.',
-      'Freelance and Consulting: Consider starting a freelance business or consulting practice.',
-    ],
-  },
-]
+// export const experienceData = [
+//   {
+//     year: 1,
+//     title: "Foundation and Basics",
+//     education:
+//       "High School Diploma: Focus on computer science, mathematics, and art/design courses.",
+//     experience: [
+//       "Basic HTML/CSS: Learn through online tutorials and courses.",
+//       "Personal Projects: Create simple personal websites or blogs.",
+//     ],
+//   },
+//   {
+//     year: 2,
+//     title: "Advanced Learning and Early Experience",
+//     education:
+//       "Associate’s Degree in Web Development or Design: Enroll in a 2-year program covering web development and design principles.",
+//     experience: [
+//       "Freelance Work: Take on small freelance projects to build a portfolio.",
+//       "Online Courses and Certifications: Learn JavaScript, responsive design, and UX/UI design.",
+//     ],
+//   },
+//   {
+//     year: 3,
+//     title: "Specialized Education and Real-World Application",
+//     education:
+//       "Online Courses and Bootcamps: Focus on specialized areas like front-end frameworks (React, Angular) and back-end technologies (Node.js).",
+//     experience: [
+//       "Internships: Secure internships with tech companies or design agencies.",
+//       "Contribute to Open Source: Collaborate on open-source projects.",
+//     ],
+//   },
+//   {
+//     year: 4,
+//     title: "Building Expertise and Expanding Skills",
+//     education:
+//       "Certifications: Obtain certifications in advanced web technologies.",
+//     experience: [
+//       "Full-Time Position: Work as a junior web developer or designer.",
+//       "Portfolio Development: Continuously update your portfolio with professional and personal projects.",
+//     ],
+//   },
+//   {
+//     year: 5,
+//     title: "Mastery and Leadership",
+//     education:
+//       "Workshops and Conferences: Attend industry events to stay updated.",
+//     experience: [
+//       "Senior Position: Aim for a senior web developer or lead designer role, mentoring junior colleagues.",
+//       "Freelance and Consulting: Consider starting a freelance business or consulting practice.",
+//     ],
+//   },
+// ];
 
 // Skills
 export const skillsData = [
+  // {
+  //   name: 'Figma',
+  //   icon: '/skills/figma.png',
+  // },
+
   {
-    name: 'Figma',
-    icon: '/skills/figma.png',
-  },
-  
-  {
-    name: 'HTML',
-    icon: '/skills/html.png',
-  },
-  {
-    name: 'CSS',
-    icon: '/skills/css.png',
+    name: "HTML",
+    icon: "/skills/html.png",
   },
   {
-    name: 'JavaScript',
-    icon: '/skills/js.png',
+    name: "CSS",
+    icon: "/skills/css.png",
   },
   {
-    name: 'TailwindCSS',
-    icon: '/skills/tailwind.png',
+    name: "JavaScript",
+    icon: "/skills/js.png",
+  },
+  {
+    name: "TailwindCSS",
+    icon: "/skills/tailwind.png",
   },
 
   {
-    name: 'ReactJS',
-    icon: '/skills/react.png',
+    name: "ReactJS",
+    icon: "/skills/react.png",
   },
   {
-    name: 'TypeScript',
-    icon: '/skills/ts.png',
+    name: "TypeScript",
+    icon: "/skills/ts.png",
   },
- 
+
   {
-    name: 'Framer Motion',
-    icon: '/skills/framer.png',
-  },
- 
-  {
-    name: 'NextJS',
-    icon: '/skills/nextjs.png',
+    name: "NextJS",
+    icon: "/skills/nextjs.png",
   },
   {
-    name: 'NodeJS',
-    icon: '/skills/nodejs.png',
+    name: "NodeJS",
+    icon: "/skills/nodejs.png",
   },
   {
-    name: 'MongoDB',
-    icon: '/skills/mongodb.png',
+    name: "MongoDB",
+    icon: "/skills/mongodb.png",
   },
   {
-    name: 'Github',
-    icon: '/skills/github.png',
+    name: "Redux",
+    icon: "/skills/redux.png",
   },
-]
+  {
+    name: "TanStack Query",
+    icon: "/skills/query.png",
+  },
+  {
+    name: "Framer Motion",
+    icon: "/skills/framer.png",
+  },
+  {
+    name: "ShadCN",
+    icon: "/skills/shadcn.png",
+  },
+  {
+    name: "Github",
+    icon: "/skills/github.png",
+  },
+];
 
 // Reviews
-import StarFillIcon from 'remixicon-react/StarFillIcon'
-import StarHalfLineIcon from 'remixicon-react/StarHalfLineIcon'
-import ArrowLeftSLineIcon from 'remixicon-react/ArrowLeftSLineIcon'
-import ArrowRightSLineIcon from 'remixicon-react/ArrowRightSLineIcon'
+import StarFillIcon from "remixicon-react/StarFillIcon";
+import StarHalfLineIcon from "remixicon-react/StarHalfLineIcon";
+import ArrowLeftSLineIcon from "remixicon-react/ArrowLeftSLineIcon";
+import ArrowRightSLineIcon from "remixicon-react/ArrowRightSLineIcon";
 
 /* eslint-disable react/jsx-key */
-export const starIcons = [<StarFillIcon />, <StarHalfLineIcon />]
-export const arrowIcons = [<ArrowLeftSLineIcon />, <ArrowRightSLineIcon />]
+export const starIcons = [<StarFillIcon />, <StarHalfLineIcon />];
+export const arrowIcons = [<ArrowLeftSLineIcon />, <ArrowRightSLineIcon />];
 
 // export const reviewsData = [
 //   {
@@ -213,63 +236,77 @@ export const arrowIcons = [<ArrowLeftSLineIcon />, <ArrowRightSLineIcon />]
 // Projects
 export const projectsData = [
   {
-    name: '',
-    desc: 'A lifestyle blog featuring DIY crafts, home decor ideas, and inspiration for creating a cozy and stylish living space.',
-    url: '/projects/ecommerce.png',
-    tech: ['HTML','TailwindCSS','JavaScript','NodeJs','ExpressJs','MongoDB','ReactJs','Redux']
+    name: "Ecommerce",
+    
+    url: "/projects/ecommerce.png",
+    github: "https://github.com/amith2083/full_stack_ecommerce_mern",
+    demo: "https://trendzcart.vercel.app/",
+    tech: [
+      "TailwindCSS",
+      "JavaScript",
+      "NodeJs",
+      "MongoDB",
+      "ReactJs",
+      "Redux",
+    ],
   },
   {
-    name: 'TechTrekker.net',
-    desc: 'A technology news and review site covering the latest gadgets, software updates, and trends in the tech industry.',
-    url: '/projects/chat.png',
-    tech: ['HTML', 'TailwindCSS','ReactJs','JavaScript','Firebase'],
-  },
-  {
-    name: 'CozyNestHomes.org',
-    desc: 'A resource for homeowners and renters alike, offering tips on interior design, home improvement projects, and sustainable living practices.',
-    url: '/projects/image-3.jpg',
-    tech: ['HTML', 'CSS', 'JavaScript'],
-  },
-  {
-    name: 'WanderLuxeTravels.co',
-    desc: 'A travel website that provides luxury travel guides, destination reviews, and tips for planning unforgettable vacations.',
-    url: '/projects/image-4.jpg',
-    tech: ['HTML', 'CSS', 'JavaScript', 'TailwindCSS'],
-  },
-  {
-    name: 'ByteBoosters.io',
-    desc: 'A tech startup specializing in software development, offering innovative solutions and services for businesses looking to enhance their digital presence.',
-    url: '/projects/image-5.jpg',
-    tech: ['Figma', 'ReactJS', 'TailwindCSS', 'CSS'],
-  },
-  {
-    name: 'GreenLeafGardens.biz',
-    desc: 'An online store and community hub for gardening enthusiasts, featuring a wide range of plants, gardening tools, and expert advice.',
-    url: '/projects/image-6.jpg',
-    tech: ['ReactJS', 'TailwindCSS', , 'CSS', 'FramerMotion'],
-  },
-  {
-    name: 'PixelPerfectDesigns.info',
-    desc: 'A graphic design portfolio showcasing the work of a freelance designer, including branding, web design, and illustration projects.',
-    url: '/projects/image-7.jpg',
-    tech: ['NextJS', 'FramerMotion'],
-  },
+    name: "chatSphere",
 
-]
+    url: "/projects/chat.png",
+    demo: "https://chatsphere-ai.netlify.app/",
+    github:"https://github.com/amith2083/Gemini-Powered-DevTool",
+    tech: [ "TailwindCSS", "ReactJs", "JavaScript", "Firebase"],
+  },
+  {
+    name: "Learning Management System",
+
+    url: "/projects/lms.png",
+    github: "https://github.com/amith2083/todo/tree/master",
+    tech: [ "TypeScript","NodeJs","MongoDB","NextJs","TanStack Query"]
+  },
+  {
+    name: "Todo",
+
+    url: "/projects/todo.png",
+    github: "https://github.com/amith2083/todo/tree/master",
+    demo: "https://amith2083.github.io/todo/",
+    tech: [ "JavaScript", "TailwindCSS","ReactJs"],
+  },
+  {
+    name: "Netflix clone",
+
+    url: "/projects/netflix.png",
+    github: "https://github.com/amith2083/Netflix_clone_using_react",
+    tech: [ "ReactJs", "TailwindCSS", "Firebase"],
+  },
+  // {
+  //   name: 'GreenLeafGardens.biz',
+
+  //   url: '/projects/image-6.jpg',
+  //   tech: ['ReactJS', 'TailwindCSS', , 'CSS', 'FramerMotion'],
+  // },
+  // {
+  //   name: 'PixelPerfectDesigns.info',
+  //   desc: 'A graphic design portfolio showcasing the work of a freelance designer, including branding, web design, and illustration projects.',
+  //   url: '/projects/image-7.jpg',
+  //   tech: ['NextJS', 'FramerMotion'],
+  // },
+];
 
 export const projectsButton = [
-  'All',
-  'JavaScript',
-  'NodeJs',
-  'ExpressJs',
-  'MongoDB',
-  'ReactJS',
-  'Redux',
-  'TailwindCSS',
-  'NextJS',
-  'FramerMotion',
-  
-]
+  "All",
+  "JavaScript",
+  "NodeJs",
+  "MongoDB",
+  "ReactJs",
+  "Redux",
+  "TailwindCSS",
+  "TanStack Query",
+  "NextJs",
+  "TypeScript",
+  "Firebase"
+];
 
 // Pricing Plans
 // export const pricingPlans = [
@@ -321,9 +358,9 @@ export const projectsButton = [
 //   },
 // ]
 
-import CheckLineIcon from 'remixicon-react/CheckLineIcon'
+import CheckLineIcon from "remixicon-react/CheckLineIcon";
 
-export const checkIcon = <CheckLineIcon />
+export const checkIcon = <CheckLineIcon />;
 
 // Q & A
 // export const questions = [
@@ -384,63 +421,61 @@ export const checkIcon = <CheckLineIcon />
 //   },
 // ]
 
-import ArrowDropDownLineIcon from 'remixicon-react/ArrowDropDownLineIcon'
-export const questionArrow = <ArrowDropDownLineIcon />
+import ArrowDropDownLineIcon from "remixicon-react/ArrowDropDownLineIcon";
+export const questionArrow = <ArrowDropDownLineIcon />;
 
 // Navbar
-import CopyrightLineIcon from 'remixicon-react/CopyrightLineIcon'
+import CopyrightLineIcon from "remixicon-react/CopyrightLineIcon";
 
-export const copyRightIcon = <CopyrightLineIcon />
+export const copyRightIcon = <CopyrightLineIcon />;
 
-import Home8FillIcon from 'remixicon-react/Home8FillIcon'
-import UserLineIcon from 'remixicon-react/UserLineIcon'
-import HistoryFillIcon from 'remixicon-react/HistoryFillIcon'
-import BriefcaseFillIcon from 'remixicon-react/BriefcaseFillIcon'
-import UserStarFillIcon from 'remixicon-react/UserStarFillIcon'
-import ProjectorFillIcon from 'remixicon-react/ProjectorFillIcon'
+import Home8FillIcon from "remixicon-react/Home8FillIcon";
+import UserLineIcon from "remixicon-react/UserLineIcon";
+// import HistoryFillIcon from 'remixicon-react/HistoryFillIcon'
+import BriefcaseFillIcon from "remixicon-react/BriefcaseFillIcon";
+import UserStarFillIcon from "remixicon-react/UserStarFillIcon";
+import ProjectorFillIcon from "remixicon-react/ProjectorFillIcon";
 
-import ContactsBook2FillIcon from 'remixicon-react/ContactsBook2FillIcon'
-
+import ContactsBook2FillIcon from "remixicon-react/ContactsBook2FillIcon";
 
 export const navbarData = [
   {
-    id: 'home',
-    name: 'Home',
+    id: "home",
+    name: "Home",
     icon: <Home8FillIcon />,
   },
   {
-    id: 'about',
-    name: 'About',
+    id: "about",
+    name: "About",
     icon: <UserStarFillIcon />,
   },
+  // {
+  //   id: 'experience',
+  //   name: 'MyRoad',
+  //   icon: <HistoryFillIcon />,
+  // },
   {
-    id: 'experience',
-    name: 'MyRoad',
-    icon: <HistoryFillIcon />,
-  },
-  {
-    id: 'skills',
-    name: 'Skills',
+    id: "skills",
+    name: "Skills",
     icon: <BriefcaseFillIcon />,
   },
- 
+
   {
-    id: 'projects',
-    name: 'Projects',
+    id: "projects",
+    name: "Projects",
     icon: <ProjectorFillIcon />,
   },
- 
+
   {
-    id: 'contact',
-    name: 'Contact',
+    id: "contact",
+    name: "Contact",
     icon: <ContactsBook2FillIcon />,
   },
- 
-]
+];
 
 // Toggle
-import MoonFoggyFillIcon from 'remixicon-react/MoonFoggyFillIcon'
-import SunFoggyFillIcon from 'remixicon-react/SunFoggyFillIcon'
+import MoonFoggyFillIcon from "remixicon-react/MoonFoggyFillIcon";
+import SunFoggyFillIcon from "remixicon-react/SunFoggyFillIcon";
 
-export const sunIcon = <SunFoggyFillIcon />
-export const moonIcon = <MoonFoggyFillIcon />
+export const sunIcon = <SunFoggyFillIcon />;
+export const moonIcon = <MoonFoggyFillIcon />;

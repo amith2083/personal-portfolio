@@ -61,8 +61,7 @@ export const downloadIcon = <DownloadLineIcon />;
 export const arrowLeftIcon = <ArrowLeftSFillIcon />;
 
 export const aboutText =
-  " Hi, I'm Amith, a web developer who loves turning ideas into awesome, fast websites. I use HTML, CSS, and JavaScript to build slick, responsive front-ends with React and Next.js, strengthened by TypeScript for reliable code. On the back-end, I work with Node.js, Express.js, and MongoDB to create quick, secure APIs for smooth performance. I focus on building user-friendly, innovative solutions that work perfectly. Ready to kickstart your project? Let’s do it";
-// End of About Me
+  "Hi, I'm Amith – a MERN Stack Developer passionate about building full-stack web applications. I work with JavaScript, TypeScript, Node.js, Express.js, and MongoDB to develop fast, scalable, and secure back-end systems. On the front end, I use React to create dynamic, responsive user interfaces that deliver smooth experiences across devices.I enjoy turning ideas into functional, user-friendly applications and writing clean, maintainable code that performs well. Always learning, always building."
 
 // Experience
 // export const experienceData = [
@@ -182,6 +181,14 @@ export const skillsData = [
   {
     name: "Github",
     icon: "/skills/github.png",
+  },
+   {
+    name: " JWT ",
+    icon: "/skills/jwt.png",
+  },
+   {
+    name: "OAuth 2.0",
+    icon: "/skills/oauth.png",
   },
 ];
 

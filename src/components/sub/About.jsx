@@ -7,7 +7,10 @@ import { aboutData, aboutText, downloadIcon, arrowLeftIcon } from '@/assets'
 
 const About = () => {
   return (
-    <div id='about' className='min-h-screen flex flex-col justify-center items-center px-4 sm:px-6 lg:px-20 py-10 ml-[100px]'>
+    <div 
+  id='about' 
+  className='min-h-screen lg:ml-[100px] ml-0 flex flex-col justify-center items-center px-4 sm:px-6 lg:px-20 py-10'
+>
       <Heading text={'About Me'} />
       <div className='w-full flex flex-row lg:flex-col items-center justify-center gap-6 lg:gap-12 '>
         <Image 
@@ -22,11 +25,11 @@ const About = () => {
           <span className='absolute rounded-xl -left-2 sm:-left-4 top-8 sm:top-16 scale-150 lg:scale-[2.5] text-zinc-100'>{arrowLeftIcon}</span>
           <p className='text-lg sm:text-sm font-light text-gray-700 first-letter:pl-2'>{aboutText}</p>
           <a 
-            href="/nick-cv.pdf" 
+            href="/amith-resume.pdf" 
             download 
             className='bg-red-400 font-light w-max mt-2 sm:mt-4 flex rounded-full items-center px-2 sm:px-3 py-1 sm:py-2 gap-x-1 sm:gap-x-2 border border-gray-300 text-white hover:bg-red-500 transition-colors'
           >
-            <span className='text-sm sm:text-lg'>Download CV</span>
+            <span className='text-sm sm:text-lg'>Download Resume</span>
             <span>{downloadIcon}</span>
           </a>
         </div>

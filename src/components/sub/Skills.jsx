@@ -22,7 +22,7 @@ const Skills = () => {
   return (
     <div id='skills' className="min-h-screen flex flex-col items-center justify-center gap-y-10 px-4 sm:px-6 lg:px-20 py-10 ml-[100px]">
       <Heading text={'Skills'} />
-<div className="w-full max-w-6xl grid grid-cols-5 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-4 lg:gap-2">
+<div className="w-full max-w-6xl grid grid-cols-5 sm:grid-cols-2 xl:grid-cols-4 gap-6 sm:gap-4 xl:gap-2">
         {skillsData.map((item, i) => (
           <motion.div 
             custom={i} 

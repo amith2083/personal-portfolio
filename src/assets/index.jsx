@@ -34,12 +34,12 @@ import GroupLineIcon from "remixicon-react/GroupLineIcon";
 export const aboutData = [
   {
     title: "Github Repos",
-    amount: 18,
+    amount: 16,
     icon: <GithubFillIcon />,
   },
   {
     title: "Projects",
-    amount: 6,
+    amount: 5,
     icon: <Projector2LineIcon />,
   },
   // {
@@ -189,6 +189,10 @@ export const skillsData = [
    {
     name: "OAuth 2.0",
     icon: "/skills/oauth.png",
+  },
+   {
+    name: "Razorpay",
+    icon: "/skills/razorpay.jpg",
   },
 ];
 

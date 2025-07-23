@@ -23,14 +23,17 @@ const Projects = () => {
 
   return (
     <div id='projects' className="min-h-screen py-10 px-4 sm:px-6 lg:px-20 ml-[100px]">
-      <Heading text="Projects" />
+      <div className="w-full flex justify-center">
+  <Heading text="Projects" />
+</div>
+      
       <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-4 mb-6">
         {projectsButton.map((text, i) => (
           <motion.button 
             initial={{ opacity: i === 0 ? 1 : 0.5, scale: i === 0 ? 1.2 : 1 }}
             key={i} 
             ref={(ele) => buttonRef.current[i] = ele}
-            className="border border-yellow-500 rounded-xl px-2 py-1 text-xs sm:text-sm font-light tracking-wider text-gray-400"
+            className="border border-yellow-600 rounded-xl px-2 py-1 text-xs sm:text-sm font-light tracking-wider text-gray-900 mx-1"
             onClick={() => { setTech(text); setIndex(i); }}
           >
             {text}

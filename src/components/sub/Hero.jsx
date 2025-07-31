@@ -55,7 +55,7 @@ const Hero = () => {
             {/* <span className='absolute text-xl sm:text-2xl lg:text-3xl text-white'>Hello</span> */}
           </motion.div>
           <h1 className='font-bold text-gray-500 tracking-wider text-xl sm:text-2xl lg:text-4xl'>I'm Amith k m</h1>
-          <p className='text-gray-600 tracking-wider text-base sm:text-lg lg:text-xl'>passionate Full-Stack Developer 🤗</p>
+          <p className='text-gray-600 tracking-wider text-base sm:text-lg lg:text-xl ml-6'>passionate Full-Stack Developer 🤗</p>
         </motion.div>
         <motion.div 
           initial={{ opacity: 0, y: 100 }} 

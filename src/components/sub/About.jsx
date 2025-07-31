@@ -18,7 +18,7 @@ const About = () => {
           alt='About Image' 
           width={300} 
           height={300} 
-         className='w-full max-w-sm sm:max-w-md lg:max-w-lg object-contain'
+         className='w-full max-w-sm sm:max-w-md lg:max-w-lg object-contain ml-10'
   sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
         />
         <div className='w-full max-w-2xl bg-zinc-50 relative p-2 sm:p-4 text-justify '>

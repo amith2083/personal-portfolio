@@ -9,9 +9,9 @@ const About = () => {
   return (
     <div 
   id='about' 
-  className='min-h-screen lg:ml-[100px] ml-0 flex flex-col justify-center items-center px-4 sm:px-6 lg:px-20 py-10'
+ className='min-h-screen ml-16 sm:ml-20 lg:ml-[100px] flex flex-col justify-center items-center px-4 sm:px-6 lg:px-20 py-10'
 >
-      <Heading text={'About Me'} />
+      <Heading  text={'About Me'} />
       <div className='w-full flex flex-row lg:flex-col items-center justify-center gap-6 lg:gap-12 '>
         <Image 
           src={'/about-me.png'} 
@@ -23,7 +23,7 @@ const About = () => {
         />
         <div className='w-full max-w-2xl bg-zinc-50 relative p-2 sm:p-4 text-justify '>
           <span className='absolute rounded-xl -left-2 sm:-left-4 top-8 sm:top-16 scale-150 lg:scale-[2.5] text-zinc-100'>{arrowLeftIcon}</span>
-          <p className='text-lg sm:text-sm font-light text-gray-700 first-letter:pl-2'>{aboutText}</p>
+          <p className='text-lg text-center sm:text-sm font-light text-gray-700 first-letter:pl-2'>{aboutText}</p>
           <a 
             href="/amith-resume.pdf" 
             download 

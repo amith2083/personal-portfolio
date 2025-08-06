@@ -28,7 +28,7 @@ const Hero = () => {
   return (
     <div 
       id='home' 
-      className='min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-10'
+      className='min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-10 pl-16 sm:pl-20 lg:pl-[70px]'
       onMouseMove={handleMove} 
       onMouseEnter={handleEnter}
     >

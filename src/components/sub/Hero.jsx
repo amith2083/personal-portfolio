@@ -1,14 +1,34 @@
 'use client'
 import Image from 'next/image'
-import React, { useMemo, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { heroIcons } from '@/assets'
 import { useMotionValue, useTransform, motion } from 'framer-motion'
 
 const Hero = () => {
   const x = useMotionValue(0);
   const y = useMotionValue(0);
-  const [windowOffset, setWindowOffset] = useState({ innerWidth: 0, innerHeight: 0 });
   const [mouseMove, setMouseMove] = useState(false);
+  const [windowSize, setWindowSize] = useState({ width: 0, height: 0 });
+
+  // Set window dimensions only on the client side
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      setWindowSize({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      });
+
+      // Update dimensions on resize
+      const handleResize = () => {
+        setWindowSize({
+          width: window.innerWidth,
+          height: window.innerHeight,
+        });
+      };
+      window.addEventListener('resize', handleResize);
+      return () => window.removeEventListener('resize', handleResize);
+    }
+  }, []);
 
   const handleMove = (e) => {
     const { clientX, clientY } = e;
@@ -16,78 +36,74 @@ const Hero = () => {
     y.set(clientY);
   };
 
-  const handleEnter = () => {
-    setWindowOffset({ innerHeight: window.innerHeight, innerWidth: window.innerWidth });
-    setMouseMove(true);
-  };
-
-  const { innerWidth, innerHeight } = windowOffset;
-  const rotateY = useTransform(x, [0, innerWidth], [-20, 20]);
-  const rotateX = useTransform(y, [0, innerHeight], [10, -30]);
+  // Use windowSize values for transformations
+  const rotateY = useTransform(x, [0, windowSize.width || 1440], [-15, 15]); // Fallback to 1440 if width is 0
+  const rotateX = useTransform(y, [0, windowSize.height || 900], [15, -15]); // Fallback to 900 if height is 0
 
   return (
-    <div 
+    <section 
       id='home' 
-      className='min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-10 pl-16 sm:pl-20 lg:pl-[70px]'
+      className='min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-10 md:pl-[100px] relative overflow-hidden'
       onMouseMove={handleMove} 
-      onMouseEnter={handleEnter}
+      onMouseEnter={() => setMouseMove(true)}
     >
-      <div className="text-center">
+      <motion.div 
+        className="absolute inset-0 bg-gradient-to-tr from-yellow-200 to-red-200 dark:from-gray-800 dark:to-gray-600 opacity-50"
+        style={{ rotateX, rotateY, transition: '0.2s' }}
+      />
+      <div className="text-center z-10">
         <motion.div 
-          initial={{ opacity: 0, y: -100 }} 
-          animate={{ opacity: 1, y: 0 }} 
-          transition={{ delay: 0.5 }} 
-          viewport={{ once: true }} 
-          className='flex flex-col justify-center items-center gap-y-4 font-light capitalize'
+          initial={{ opacity: 0, scale: 0.8 }} 
+          animate={{ opacity: 1, scale: 1 }} 
+          transition={{ duration: 1 }} 
+          className='flex flex-col justify-center items-center gap-y-6'
         >
           <motion.div 
-            className='flex justify-center items-center relative' 
-            style={{ rotateX: mouseMove ? rotateX : 0, rotateY: mouseMove ? rotateY : 0, transition: '0.1s' }}
+            className='relative group'
+            style={{ perspective: 1000 }}
           >
             <Image 
-              className='h-auto w-32 sm:w-40 lg:w-48' 
+              className='h-48 w-48 md:h-64 md:w-64 rounded-full shadow-2xl border-8 border-yellow-400 group-hover:border-white transition-all object-cover'
               src={'/person.png'} 
               alt='Person Image' 
-              width={200} 
-              height={200} 
+              width={300} 
+              height={300} 
               priority={true}
             />
-            {/* <span className='absolute text-xl sm:text-2xl lg:text-3xl text-white'>Hello</span> */}
           </motion.div>
-          <h1 className='font-bold text-gray-500 tracking-wider text-xl sm:text-2xl lg:text-4xl'>I'm Amith k m</h1>
-          <p className='text-gray-600 tracking-wider text-base sm:text-lg lg:text-xl ml-6'>passionate Full-Stack Developer 🤗</p>
+          <h1 className='font-extrabold text-5xl md:text-7xl tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-red-500 to-yellow-500'>Amith K M</h1>
+          <p className='text-xl md:text-2xl text-gray-700 dark:text-gray-300 font-light'>Full-Stack Developer | MERN Enthusiast 🚀</p>
         </motion.div>
         <motion.div 
-          initial={{ opacity: 0, y: 100 }} 
+          initial={{ opacity: 0, y: 50 }} 
           animate={{ opacity: 1, y: 0 }} 
           transition={{ delay: 0.5 }} 
-          viewport={{ once: true }} 
-          className='flex gap-x-6 justify-center mt-4 text-yellow-500 text-lg sm:text-xl lg:text-2xl'
+          className='flex gap-6 justify-center mt-8 text-3xl'
         >
-         {heroIcons.map((item, i) => (
-    <a
-      href={item.href}
-      key={i}
-      target="_blank"
-      rel="noopener noreferrer"
-      className='rounded-lg hover:bg-red-400 hover:text-white transition-colors p-2'
-    >
-      {item.icon}
-    </a>
-  ))}
+          {heroIcons.map((item, i) => (
+            <motion.a
+              key={i}
+              href={item.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              whileHover={{ scale: 1.2, rotate: 360 }}
+              className='text-yellow-500 hover:text-red-500 transition-colors'
+            >
+              {item.icon}
+            </motion.a>
+          ))}
         </motion.div>
         <motion.a 
           href="/#contact" 
-          initial={{ opacity: 0, x: -30 }} 
-          animate={{ opacity: 1, x: 0 }} 
+          initial={{ opacity: 0, scale: 0.9 }} 
+          animate={{ opacity: 1, scale: 1 }} 
           transition={{ delay: 0.7 }} 
-          viewport={{ once: true }} 
-          className='mx-auto block font-light text-white bg-red-400 hover:bg-red-500 transition-colors mt-6 w-max rounded-lg px-3 py-2 text-sm sm:text-base tracking-wider capitalize'
+          className='block mx-auto mt-8 bg-gradient-to-r from-yellow-500 to-red-500 text-white font-bold px-8 py-4 rounded-full shadow-lg hover:shadow-2xl hover:scale-105 transition-all'
         >
-          Talk to me
+          Let's Connect
         </motion.a>
       </div>
-    </div>
+    </section>
   )
 }
 

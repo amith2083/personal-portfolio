@@ -1,31 +1,33 @@
+
 'use client'
 
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-const Load = () => {
-   const [showLoader, setShowLoader] = useState(true);
 
-  // useEffect(() => {
-  //   setLoad(true);
-  // }, []);
-    useEffect(() => {
-    const timer = setTimeout(() => {
-      setShowLoader(false);
-    }, 1000); // Adjust delay if needed
+const Load = () => {
+  const [showLoader, setShowLoader] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setShowLoader(false), 1500);
     return () => clearTimeout(timer);
   }, []);
 
   return (
-     <AnimatePresence>
+    <AnimatePresence>
       {showLoader && (
         <motion.div
-          initial={{ top: 0 }}
-          animate={{ top: '-100%' }}
+          initial={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          transition={{ duration: 0.5 }}
-          className="w-full h-full fixed left-0 top-0 flex items-center justify-center bg-gradient-to-t from-yellow-50 to-red-50 z-50"
+          transition={{ duration: 0.8, ease: 'easeInOut' }}
+          className="fixed inset-0 flex items-center justify-center bg-gradient-to-br from-yellow-100 to-red-100 z-50"
         >
-          <img src="/spinner.gif" alt="Spinner Gif" />
+          <motion.img 
+            src="/spinner.gif" 
+            alt="Loading" 
+            initial={{ scale: 0.5, rotate: 0 }}
+            animate={{ scale: 1, rotate: 360 }}
+            transition={{ duration: 1.5, loop: Infinity }}
+          />
         </motion.div>
       )}
     </AnimatePresence>
